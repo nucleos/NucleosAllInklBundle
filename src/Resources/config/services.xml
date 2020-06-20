@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+  <services>
+    <service id="Nucleos\AllInklBundle\Mailer\Mailer" alias="Nucleos\AllInklBundle\Mailer\SymfonyMailer"/>
+    <service id="Nucleos\AllInklBundle\Mailer\SymfonyMailer">
+      <argument type="service" id="mailer.mailer"/>
+      <argument type="service" id="translator"/>
+      <argument type="collection"/>
+    </service>
+    <service id="nucleos_allinkl.service.account" class="Nucleos\AllInklBundle\Service\AccountService">
+      <argument>%nucleos_allinkl.api.api_endpoint%</argument>
+    </service>
+    <service id="nucleos_allinkl.service.auth" class="Nucleos\AllInklBundle\Service\AuthService">
+      <argument>%nucleos_allinkl.api.auth_endpoint%</argument>
+    </service>
+    <service id="nucleos_allinkl.service.statistic" class="Nucleos\AllInklBundle\Service\StatisticService">
+      <argument>%nucleos_allinkl.api.api_endpoint%</argument>
+    </service>
+  </services>
+</container>

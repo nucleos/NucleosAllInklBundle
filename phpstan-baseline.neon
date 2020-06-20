@@ -1,0 +1,107 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Block\\\\Service\\\\SpaceStatisticBlockService\\:\\:getData\\(\\) has parameter \\$settings with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Block/Service/SpaceStatisticBlockService.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Block\\\\Service\\\\SpaceStatisticBlockService\\:\\:getData\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Block/Service/SpaceStatisticBlockService.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Command\\\\SpaceCheckCommand\\:\\:__construct\\(\\) has parameter \\$defaultAccounts with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Command/SpaceCheckCommand.php
+
+		-
+			message: "#^Return type \\(int\\|null\\) of method Nucleos\\\\AllInklBundle\\\\Command\\\\SpaceCheckCommand\\:\\:execute\\(\\) should be covariant with return type \\(int\\) of method Symfony\\\\Component\\\\Console\\\\Command\\\\Command\\:\\:execute\\(\\)$#"
+			count: 1
+			path: src/Command/SpaceCheckCommand.php
+
+		-
+			message: "#^Call to an undefined method Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\:\\:children\\(\\)\\.$#"
+			count: 1
+			path: src/DependencyInjection/Configuration.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\DependencyInjection\\\\Configuration\\:\\:getMailNode\\(\\) should return Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\ArrayNodeDefinition but returns Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\.$#"
+			count: 1
+			path: src/DependencyInjection/Configuration.php
+
+		-
+			message: "#^Call to an undefined method Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\:\\:addDefaultsIfNotSet\\(\\)\\.$#"
+			count: 1
+			path: src/DependencyInjection/Configuration.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\DependencyInjection\\\\Configuration\\:\\:getApiNode\\(\\) should return Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\ArrayNodeDefinition but returns Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\.$#"
+			count: 1
+			path: src/DependencyInjection/Configuration.php
+
+		-
+			message: "#^Call to an undefined method Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\:\\:fixXmlConfig\\(\\)\\.$#"
+			count: 1
+			path: src/DependencyInjection/Configuration.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\DependencyInjection\\\\Configuration\\:\\:getCheckNode\\(\\) should return Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\ArrayNodeDefinition but returns Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\.$#"
+			count: 1
+			path: src/DependencyInjection/Configuration.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Mailer\\\\SymfonyMailer\\:\\:__construct\\(\\) has parameter \\$emails with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Mailer/SymfonyMailer.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\AbstractService\\:\\:call\\(\\) has parameter \\$parameter with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/AbstractService.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\AbstractService\\:\\:call\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/AbstractService.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\AbstractService\\:\\:filterNull\\(\\) has parameter \\$object with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/AbstractService.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\AbstractService\\:\\:filterNull\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/AbstractService.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\AccountService\\:\\:getAccounts\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/AccountService.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\AccountServiceInterface\\:\\:getAccounts\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/AccountServiceInterface.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\StatisticService\\:\\:getSpaceUsage\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/StatisticService.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\StatisticService\\:\\:getTraffic\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/StatisticService.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\StatisticServiceInterface\\:\\:getSpaceUsage\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/StatisticServiceInterface.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\StatisticServiceInterface\\:\\:getTraffic\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Service/StatisticServiceInterface.php
+

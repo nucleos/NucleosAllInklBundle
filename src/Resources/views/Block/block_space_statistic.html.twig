@@ -1,0 +1,65 @@
+{% extends sonata_block.templates.block_base %}
+
+{% block block %}
+    <div class="panel panel-default {{ settings.class }}">
+        {% if settings.title is not empty %}
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    {% if settings.icon %}
+                        <i class="{{ settings.icon }}" aria-hidden="true"></i>
+                    {% endif %}
+                    {% if settings.translation_domain %}
+                        {{ settings.title|trans({}, settings.translation_domain) }}
+                    {% else %}
+                        {{ settings.title }}
+                    {% endif %}
+                </h4>
+            </div>
+        {% endif %}
+
+        <div class="panel-body">
+            {% if data is empty %}
+                <p>{{ 'no_statistic_found'|trans({}, 'NucleosAllInklBundle') }}</p>
+            {% else %}
+                <div>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>{{ 'statistic_account'|trans({}, 'NucleosAllInklBundle') }}</th>
+                            <th>{{ 'statistic_used'|trans({}, 'NucleosAllInklBundle') }}</th>
+                            <th>{{ 'statistic_available'|trans({}, 'NucleosAllInklBundle') }}</th>
+                            <th>{{ 'statistic_percent'|trans({}, 'NucleosAllInklBundle') }}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for item in data %}
+                            {% set total_available = item.max_webspace %}
+                            {% set total_used = item.used_webspace %}
+                            {% set ratio = total_used / total_available * 100 %}
+                            {% set style = 'progress-bar-success' %}
+
+                            {% if ratio > 100 %}
+                                {% set style = 'progress-bar-danger' %}
+                            {% elseif ratio > 80 %}
+                                {% set style = 'progress-bar-warning' %}
+                            {% endif %}
+                            <tr>
+                                <td>{{ item.account_login }}</td>
+                                <td>{{ total_used|format_bytes }}</td>
+                                <td>{{ total_available|format_bytes }}</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar {{ style }}" role="progressbar" aria-valuenow="{{ ratio }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ min(ratio, 100) }}%;">
+                                            {{ ratio|number_format }}%
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

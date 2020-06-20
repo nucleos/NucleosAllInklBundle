@@ -1,0 +1,13 @@
+{% extends '@NucleosAllInkl/Mail/layout.html.twig' %}
+
+{% trans_default_domain 'NucleosAllInklBundle' %}
+
+{% block content %}
+    <p>
+        {{ 'space_warning.mailtext'|trans({
+            '%account%' : warning.account,
+            '%used%' : warning.used|format_bytes,
+            '%available%' : warning.available|format_bytes,
+        }) }}
+    </p>
+{% endblock %}
