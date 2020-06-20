@@ -24,7 +24,7 @@
         "ext-soap": "*",
         "core23/twig-extensions": "^1.4",
         "psr/log": "^1.0",
-        "sonata-project/block-bundle": "^3.18",
+        "sonata-project/block-bundle": "^4.0",
         "sonata-project/doctrine-extensions": "^1.1",
         "sonata-project/form-extensions": "^0.1.1 || ^1.4",
         "symfony/config": "^4.4 || ^5.0",
@@ -77,13 +77,30 @@
         "cs": "PHP_CS_FIXER_IGNORE_ENV=1 && vendor/bin/php-cs-fixer fix --verbose",
         "cs-diff": "PHP_CS_FIXER_IGNORE_ENV=1 && vendor/bin/php-cs-fixer fix  --verbose --diff --diff-format=udiff --dry-run",
         "deps": "vendor/bin/composer-require-checker check --config-file composer-require.json composer.json",
+        "infection": "vendor/bin/infection --ignore-msi-with-no-mutations --min-covered-msi=62 --min-msi=14",
         "lint": [
             "find ./src \\( -name '*.xml' -or -name '*.xml.dist' -or -name '*.xlf' \\) -type f -exec xmllint --encode UTF-8 --output '{}' --format '{}' \\;",
             "find ./src \\( -name '*.yml' -or -name '*.yaml' \\) -not -path '*/vendor/*' | xargs yaml-lint"
         ],
         "phpstan": "vendor/bin/phpstan analyse",
-        "phpstan-baseline": "vendor/bin/phpstan analyze --generate-baseline",
-        "test": "vendor/bin/phpunit --colors=always",
-        "unused": "vendor/bin/composer-unused"
-    }
+        "test": "vendor/bin/phpunit --colors=always"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/core23"
+        },
+        {
+            "type": "opencollective",
+            "url": "https://opencollective.com/core23"
+        },
+        {
+            "type": "ko-fi",
+            "url": "https://ko-fi.com/core23"
+        },
+        {
+            "type": "other",
+            "url": "https://donate.core23.de"
+        }
+    ]
 }
