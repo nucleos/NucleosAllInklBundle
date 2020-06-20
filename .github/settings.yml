@@ -4,7 +4,7 @@ _extends: .github
 
 repository:
   name: NucleosAllInklBundle
-  description: This bundle provides services for using the All-Inkl API inside symfony applications
+  description: ⚙️ This bundle provides services for using the All-Inkl API inside symfony applications
   homepage: https://nucleos.rocks
   topics: symfony, symfony-bundle, bundle, allinkl, api
 
