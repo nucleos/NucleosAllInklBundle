@@ -32,10 +32,10 @@ final class NucleosAllInklExtension extends Extension
         $configuration = new Configuration();
         $config        = $this->processConfiguration($configuration, $configs);
 
-        $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-        $loader->load('block.xml');
-        $loader->load('commands.xml');
-        $loader->load('services.xml');
+        $loader = new Loader\PhpFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('block.php');
+        $loader->load('commands.php');
+        $loader->load('services.php');
 
         $this->configureMail($container, $config);
         $this->configureCheck($container, $config);
