@@ -11,9 +11,9 @@ declare(strict_types=1);
 
 namespace Nucleos\AllInklBundle\Tests\App;
 
-use Core23\Twig\Bridge\Symfony\Bundle\Core23TwigBundle;
 use Nucleos\AllInklBundle\NucleosAllInklBundle;
 use Nucleos\AllInklBundle\Tests\App\Controller\TestController;
+use Nucleos\Twig\Bridge\Symfony\Bundle\NucleosTwigBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Bundle\TwigBundle\TwigBundle;
@@ -42,7 +42,7 @@ final class AppKernel extends Kernel
     {
         yield new FrameworkBundle();
         yield new TwigBundle();
-        yield new Core23TwigBundle();
+        yield new NucleosTwigBundle();
         yield new NucleosAllInklBundle();
     }
 
