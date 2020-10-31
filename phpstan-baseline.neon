@@ -16,11 +16,6 @@ parameters:
 			path: src/Command/SpaceCheckCommand.php
 
 		-
-			message: "#^Return type \\(int\\|null\\) of method Nucleos\\\\AllInklBundle\\\\Command\\\\SpaceCheckCommand\\:\\:execute\\(\\) should be covariant with return type \\(int\\) of method Symfony\\\\Component\\\\Console\\\\Command\\\\Command\\:\\:execute\\(\\)$#"
-			count: 1
-			path: src/Command/SpaceCheckCommand.php
-
-		-
 			message: "#^Call to an undefined method Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\:\\:children\\(\\)\\.$#"
 			count: 1
 			path: src/DependencyInjection/Configuration.php
