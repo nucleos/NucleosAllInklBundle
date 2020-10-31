@@ -72,7 +72,7 @@ final class SpaceCheckCommand extends Command
         $this->addOption('dry-run', null, InputOption::VALUE_NONE, 'Starts in silent mode without sending any mail');
     }
 
-    public function execute(InputInterface $input, OutputInterface $output): ?int
+    public function execute(InputInterface $input, OutputInterface $output): int
     {
         $output = new SymfonyStyle($input, $output);
         $output->title('Checking All-Inkl accounts:');
