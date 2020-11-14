@@ -8,7 +8,7 @@ NucleosAllInklBundle
 [![Monthly Downloads](https://poser.pugx.org/nucleos/allinkl-bundle/d/monthly)](https://packagist.org/packages/nucleos/allinkl-bundle)
 [![Daily Downloads](https://poser.pugx.org/nucleos/allinkl-bundle/d/daily)](https://packagist.org/packages/nucleos/allinkl-bundle)
 
-[![Continuous Integration](https://github.com/nucleos/NucleosAllInklBundle/workflows/Continuous%20Integration/badge.svg)](https://github.com/nucleos/NucleosAllInklBundle/actions)
+[![Continuous Integration](https://github.com/nucleos/NucleosAllInklBundle/workflows/Continuous%20Integration/badge.svg)](https://github.com/nucleos/NucleosAllInklBundle/actions?query=workflow%3A"Continuous+Integration"+branch%3Amain)
 [![Code Coverage](https://codecov.io/gh/nucleos/NucleosAllInklBundle/branch/main/graph/badge.svg)](https://codecov.io/gh/nucleos/NucleosAllInklBundle)
 [![Type Coverage](https://shepherd.dev/github/nucleos/NucleosAllInklBundle/coverage.svg)](https://shepherd.dev/github/nucleos/NucleosAllInklBundle)
 
