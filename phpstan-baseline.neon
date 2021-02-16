@@ -16,36 +16,6 @@ parameters:
 			path: src/Command/SpaceCheckCommand.php
 
 		-
-			message: "#^Call to an undefined method Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\:\\:children\\(\\)\\.$#"
-			count: 1
-			path: src/DependencyInjection/Configuration.php
-
-		-
-			message: "#^Method Nucleos\\\\AllInklBundle\\\\DependencyInjection\\\\Configuration\\:\\:getMailNode\\(\\) should return Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\ArrayNodeDefinition but returns Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\.$#"
-			count: 1
-			path: src/DependencyInjection/Configuration.php
-
-		-
-			message: "#^Call to an undefined method Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\:\\:addDefaultsIfNotSet\\(\\)\\.$#"
-			count: 1
-			path: src/DependencyInjection/Configuration.php
-
-		-
-			message: "#^Method Nucleos\\\\AllInklBundle\\\\DependencyInjection\\\\Configuration\\:\\:getApiNode\\(\\) should return Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\ArrayNodeDefinition but returns Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\.$#"
-			count: 1
-			path: src/DependencyInjection/Configuration.php
-
-		-
-			message: "#^Call to an undefined method Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\:\\:fixXmlConfig\\(\\)\\.$#"
-			count: 1
-			path: src/DependencyInjection/Configuration.php
-
-		-
-			message: "#^Method Nucleos\\\\AllInklBundle\\\\DependencyInjection\\\\Configuration\\:\\:getCheckNode\\(\\) should return Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\ArrayNodeDefinition but returns Symfony\\\\Component\\\\Config\\\\Definition\\\\Builder\\\\NodeDefinition\\.$#"
-			count: 1
-			path: src/DependencyInjection/Configuration.php
-
-		-
 			message: "#^Method Nucleos\\\\AllInklBundle\\\\Mailer\\\\SymfonyMailer\\:\\:__construct\\(\\) has parameter \\$emails with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Mailer/SymfonyMailer.php
