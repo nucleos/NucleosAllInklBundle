@@ -15,7 +15,7 @@ use Nucleos\AllInklBundle\Exception\AllInklException;
 use Nucleos\AllInklBundle\Service\AuthServiceInterface;
 use Nucleos\AllInklBundle\Service\StatisticServiceInterface;
 use Psr\Log\LoggerAwareInterface;
-use Psr\Log\LoggerAwareTrait;
+use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use Sonata\BlockBundle\Block\BlockContextInterface;
 use Sonata\BlockBundle\Block\Service\AbstractBlockService;
@@ -33,7 +33,10 @@ use Twig\Environment;
 
 final class SpaceStatisticBlockService extends AbstractBlockService implements EditableBlockService, LoggerAwareInterface
 {
-    use LoggerAwareTrait;
+    /**
+     * @var LoggerInterface
+     */
+    private $logger;
 
     /**
      * @var AuthServiceInterface
@@ -128,6 +131,11 @@ final class SpaceStatisticBlockService extends AbstractBlockService implements E
         return new Metadata('nucleos_allinkl.block.space_statistic', null, null, 'NucleosAllInklBundle', [
             'class' => 'fa fa-area-chart',
         ]);
+    }
+
+    public function setLogger(LoggerInterface $logger): void
+    {
+        $this->logger = $logger;
     }
 
     public function getName(): string
