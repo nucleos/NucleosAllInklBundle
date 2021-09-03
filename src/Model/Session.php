@@ -9,7 +9,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace  Nucleos\AllInklBundle\Model;
+namespace Nucleos\AllInklBundle\Model;
 
 final class Session
 {
