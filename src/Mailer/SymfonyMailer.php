@@ -49,8 +49,8 @@ final class SymfonyMailer implements Mailer
         }
 
         $mail = (new SpaceWarningMail())
-            ->from(Address::fromString($this->emails['warning']['from']))
-            ->to(Address::fromString($this->emails['warning']['to']))
+            ->from(Address::create($this->emails['warning']['from']))
+            ->to(Address::create($this->emails['warning']['to']))
             ->subject($this->translator->trans('space_warning.subject', [
                 '%account%' => $warning->getAccount(),
             ], 'NucleosAllInklBundle'))
