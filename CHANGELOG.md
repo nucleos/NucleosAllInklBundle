@@ -2,27 +2,32 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.3.0 - TBD
+## 1.3.0 - 2021-12-07
 
-### Added
 
-- Nothing.
+-----
 
-### Changed
+### Release Notes for [1.3.0](https://github.com/nucleos/NucleosAllInklBundle/milestone/2)
 
-- Nothing.
 
-### Deprecated
 
-- Nothing.
+### 1.3.0
 
-### Removed
+- Total issues resolved: **0**
+- Total pull requests resolved: **6**
+- Total contributors: **2**
 
-- Nothing.
+#### dependency
 
-### Fixed
+ - [329: Add symfony 6 support](https://github.com/nucleos/NucleosAllInklBundle/pull/329) thanks to @core23
+ - [328: Drop symfony 4 support](https://github.com/nucleos/NucleosAllInklBundle/pull/328) thanks to @core23
+ - [323: Update psr/log requirement from ^1.0 to ^1.0 || ^2.0](https://github.com/nucleos/NucleosAllInklBundle/pull/323) thanks to @dependabot[bot]
+ - [321: Drop PHP 7 support](https://github.com/nucleos/NucleosAllInklBundle/pull/321) thanks to @core23
 
-- Nothing.
+#### Enhancement
+
+ - [327: Update tools and use make to run them](https://github.com/nucleos/NucleosAllInklBundle/pull/327) thanks to @core23
+ - [191: Add type information for static analysers](https://github.com/nucleos/NucleosAllInklBundle/pull/191) thanks to @core23
 
 ## 1.2.0 - 2021-02-07
 
