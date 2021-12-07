@@ -19,7 +19,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 final class NucleosAllInklExtension extends Extension
 {
-    public function getAlias()
+    public function getAlias(): string
     {
         return 'nucleos_allinkl';
     }

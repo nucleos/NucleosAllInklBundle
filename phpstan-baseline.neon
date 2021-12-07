@@ -70,3 +70,18 @@ parameters:
 			count: 1
 			path: src/Service/StatisticServiceInterface.php
 
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Tests\\\\App\\\\AppKernel\\:\\:configureContainer\\(\\) has parameter \\$container with no type specified\\.$#"
+			count: 1
+			path: tests/App/AppKernel.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Tests\\\\App\\\\AppKernel\\:\\:configureContainer\\(\\) has parameter \\$loader with no type specified\\.$#"
+			count: 1
+			path: tests/App/AppKernel.php
+
+		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\Tests\\\\App\\\\AppKernel\\:\\:configureRoutes\\(\\) has parameter \\$routes with no type specified\\.$#"
+			count: 1
+			path: tests/App/AppKernel.php
+
