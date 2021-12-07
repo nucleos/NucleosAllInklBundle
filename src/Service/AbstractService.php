@@ -40,7 +40,7 @@ abstract class AbstractService implements LoggerAwareInterface
     public function __construct(string $endpoint = null)
     {
         if (null === $endpoint) {
-            $endpoint = static::DEFAULT_API_ENDPOINT;
+            $endpoint = self::DEFAULT_API_ENDPOINT;
         }
 
         $this->endpoint = $endpoint;
