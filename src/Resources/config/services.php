@@ -23,7 +23,7 @@ return static function (ContainerConfigurator $container): void {
         ->set(SymfonyMailer::class)
             ->args([
                 new Reference('mailer.mailer'),
-                new Parameter('translator'),
+                new Reference('translator'),
                 [],
             ])
 
