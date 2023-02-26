@@ -109,9 +109,9 @@ final class SpaceCheckCommand extends Command
     }
 
     /**
-     * @throws AllInklException
-     *
      * @return AccountWarning[]
+     *
+     * @throws AllInklException
      */
     private function getAccountData(): array
     {

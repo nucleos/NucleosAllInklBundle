@@ -21,9 +21,9 @@ interface StatisticServiceInterface
      *
      * @param bool $details
      *
-     * @throws AllInklException
-     *
      * @return array<array<string, mixed>>
+     *
+     * @throws AllInklException
      */
     public function getSpace(Session $session, bool $subAccounts = false, $details = false): array;
 

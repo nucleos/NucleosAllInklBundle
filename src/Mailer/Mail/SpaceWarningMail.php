@@ -35,9 +35,6 @@ final class SpaceWarningMail extends TemplatedEmail
         return $this->accountWarning;
     }
 
-    /**
-     * @return SpaceWarningMail
-     */
     public function setAccountWarning(?AccountWarning $accountWarning): self
     {
         $this->accountWarning = $accountWarning;
