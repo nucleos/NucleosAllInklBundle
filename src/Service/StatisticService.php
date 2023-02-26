@@ -25,12 +25,12 @@ final class StatisticService extends AbstractService implements StatisticService
 
         return array_map(static function ($item) {
             $item['last_calculation'] = new DateTime('@'.$item['last_calculation']);
-            $item['used_htdocs_space'] *= 1000;
-            $item['used_chroot_space'] *= 1000;
-            $item['used_database_space'] *= 1000;
+            $item['used_htdocs_space']      *= 1000;
+            $item['used_chroot_space']      *= 1000;
+            $item['used_database_space']    *= 1000;
             $item['used_mailaccount_space'] *= 1000;
-            $item['used_webspace'] *= 1000;
-            $item['max_webspace'] *= 1000;
+            $item['used_webspace']          *= 1000;
+            $item['max_webspace']           *= 1000;
 
             return $item;
         }, $result);

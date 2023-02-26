@@ -25,7 +25,7 @@ use Twig\Environment;
 final class SpaceStatisticBlockServiceTest extends BlockServiceTestCase
 {
     /**
-     * @var MockObject&Environment
+     * @var Environment&MockObject
      */
     protected $twig;
 
@@ -35,7 +35,7 @@ final class SpaceStatisticBlockServiceTest extends BlockServiceTestCase
     private $authService;
 
     /**
-     * @var StatisticServiceInterface&MockObject
+     * @var MockObject&StatisticServiceInterface
      */
     private $statisticService;
 
