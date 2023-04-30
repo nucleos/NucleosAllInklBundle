@@ -2,27 +2,30 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.4.0 - TBD
+## 1.4.0 - 2023-04-30
 
-### Added
 
-- Nothing.
+-----
 
-### Changed
+### Release Notes for [1.4.0](https://github.com/nucleos/NucleosAllInklBundle/milestone/5)
 
-- Nothing.
+Feature release (minor)
 
-### Deprecated
+### 1.4.0
 
-- Nothing.
+- Total issues resolved: **0**
+- Total pull requests resolved: **4**
+- Total contributors: **2**
 
-### Removed
+#### dependency
 
-- Nothing.
+ - [452: Drop symfony 6.1 support](https://github.com/nucleos/NucleosAllInklBundle/pull/452) thanks to @core23
+ - [451: Drop support for PHP 8.0](https://github.com/nucleos/NucleosAllInklBundle/pull/451) thanks to @core23
+ - [450: Update dependency phpunit/phpunit to v10](https://github.com/nucleos/NucleosAllInklBundle/pull/450) thanks to @renovate[bot]
 
-### Fixed
+#### dependency,hacktoberfest-accepted
 
-- Nothing.
+ - [444: Update dependency sonata-project/doctrine-extensions to ^1.0 || ^2.0](https://github.com/nucleos/NucleosAllInklBundle/pull/444) thanks to @core23
 
 ## 1.3.0 - 2021-12-07
 
