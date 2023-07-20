@@ -2,27 +2,24 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.5.0 - TBD
+## 1.5.0 - 2023-07-20
 
-### Added
 
-- Nothing.
+-----
 
-### Changed
+### Release Notes for [1.5.0](https://github.com/nucleos/NucleosAllInklBundle/milestone/8)
 
-- Nothing.
+Feature release (minor)
 
-### Deprecated
+### 1.5.0
 
-- Nothing.
+- Total issues resolved: **0**
+- Total pull requests resolved: **1**
+- Total contributors: **1**
 
-### Removed
+#### dependency
 
-- Nothing.
-
-### Fixed
-
-- Nothing.
+ - [455: Add support for latest sonata dependencies](https://github.com/nucleos/NucleosAllInklBundle/pull/455) thanks to @core23
 
 ## 1.4.0 - 2023-04-30
 
