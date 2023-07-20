@@ -59,8 +59,6 @@ final class SpaceStatisticBlockService extends AbstractBlockService implements E
 
     public function execute(BlockContextInterface $blockContext, Response $response = null): Response
     {
-        \assert(null !== $blockContext->getTemplate());
-
         return $this->renderResponse($blockContext->getTemplate(), [
             'context'  => $blockContext,
             'settings' => $blockContext->getSettings(),
