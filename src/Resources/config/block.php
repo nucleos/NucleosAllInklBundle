@@ -25,6 +25,5 @@ return static function (ContainerConfigurator $container): void {
             ->call('setLogger', [
                 new Reference('logger'),
             ])
-
     ;
 };

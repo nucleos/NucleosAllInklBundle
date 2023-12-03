@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="4.6.0@77feecb3707bd50378c21ae4d3fe9e320e6cea65">
+<files psalm-version="5.16.0@2897ba636551a8cb61601cc26f6ccfbba6c36591">
   <file src="src/Block/Service/SpaceStatisticBlockService.php">
-    <ParamNameMismatch occurrences="1">
+    <ParamNameMismatch>
       <code>$formMapper</code>
     </ParamNameMismatch>
   </file>
-  <file src="src/Service/AbstractService.php">
-    <InvalidScalarArgument occurrences="1">
-      <code>$fault-&gt;getCode()</code>
-    </InvalidScalarArgument>
-  </file>
-  <file src="src/Service/AuthService.php">
-    <InvalidScalarArgument occurrences="1">
-      <code>$fault-&gt;getCode()</code>
-    </InvalidScalarArgument>
+  <file src="src/DependencyInjection/Configuration.php">
+    <UndefinedMethod>
+      <code>addDefaultsIfNotSet</code>
+      <code>append</code>
+      <code>append</code>
+      <code>append</code>
+      <code>children</code>
+      <code>fixXmlConfig</code>
+    </UndefinedMethod>
   </file>
 </files>

@@ -52,8 +52,8 @@ final class SpaceStatisticBlockServiceTest extends BlockServiceTestCase
     {
         $session = new Session('foo', 'token');
 
-        $this->authService->expects(static::once())->method('createSession')
-            ->with(static::equalTo('foologin'), static::equalTo('barpw'))
+        $this->authService->expects(self::once())->method('createSession')
+            ->with(self::equalTo('foologin'), self::equalTo('barpw'))
             ->willReturn($session)
         ;
 
@@ -61,8 +61,8 @@ final class SpaceStatisticBlockServiceTest extends BlockServiceTestCase
             ['foo' => 'bar'],
         ];
 
-        $this->statisticService->expects(static::once())->method('getSpace')
-            ->with(static::equalTo($session), true, true)
+        $this->statisticService->expects(self::once())->method('getSpace')
+            ->with(self::equalTo($session), true, true)
             ->willReturn($dataResponse)
         ;
 
@@ -77,7 +77,7 @@ final class SpaceStatisticBlockServiceTest extends BlockServiceTestCase
 
         $response = new Response();
 
-        $this->twig->expects(static::once())->method('render')
+        $this->twig->expects(self::once())->method('render')
             ->with(
                 '@NucleosAllInkl/Block/block_space_statistic.html.twig',
                 [
@@ -96,8 +96,8 @@ final class SpaceStatisticBlockServiceTest extends BlockServiceTestCase
             $this->statisticService
         );
 
-        static::assertSame($response, $blockService->execute($blockContext, $response));
-        static::assertSame('TWIG_CONTENT', $response->getContent());
+        self::assertSame($response, $blockService->execute($blockContext, $response));
+        self::assertSame('TWIG_CONTENT', $response->getContent());
     }
 
     public function testDefaultSettings(): void

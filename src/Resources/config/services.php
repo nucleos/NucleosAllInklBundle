@@ -43,6 +43,5 @@ return static function (ContainerConfigurator $container): void {
             ->args([
                 new Parameter('nucleos_allinkl.api.api_endpoint'),
             ])
-
     ;
 };
