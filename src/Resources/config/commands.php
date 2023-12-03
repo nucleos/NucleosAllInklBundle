@@ -28,6 +28,5 @@ return static function (ContainerConfigurator $container): void {
                 new Parameter('nucleos_allinkl.check.accounts'),
                 new Parameter('nucleos_allinkl.check.warning'),
             ])
-
     ;
 };

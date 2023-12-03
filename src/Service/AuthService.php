@@ -23,13 +23,10 @@ final class AuthService extends AbstractService implements AuthServiceInterface
      */
     private const DEFAULT_AUTH_ENDPOINT = 'https://kasapi.kasserver.com/soap/wsdl/KasAuth.wsdl';
 
-    /**
-     * @param string $endpoint
-     */
     public function __construct(string $endpoint = null)
     {
         if (null === $endpoint) {
-            $endpoint = static::DEFAULT_AUTH_ENDPOINT;
+            $endpoint = self::DEFAULT_AUTH_ENDPOINT;
         }
 
         parent::__construct($endpoint);

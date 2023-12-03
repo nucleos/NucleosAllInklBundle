@@ -13,6 +13,4 @@ namespace Nucleos\AllInklBundle\Exception;
 
 use Exception;
 
-final class AllInklException extends Exception
-{
-}
+final class AllInklException extends Exception {}

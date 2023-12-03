@@ -120,9 +120,7 @@ final class SpaceStatisticBlockService extends AbstractBlockService implements E
         $resolver->setRequired(['login', 'password']);
     }
 
-    public function validate(ErrorElement $errorElement, BlockInterface $block): void
-    {
-    }
+    public function validate(ErrorElement $errorElement, BlockInterface $block): void {}
 
     public function getMetadata(): MetadataInterface
     {

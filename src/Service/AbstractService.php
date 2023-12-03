@@ -34,9 +34,6 @@ abstract class AbstractService implements LoggerAwareInterface
      */
     private $endpoint;
 
-    /**
-     * @param string $endpoint
-     */
     public function __construct(string $endpoint = null)
     {
         if (null === $endpoint) {
