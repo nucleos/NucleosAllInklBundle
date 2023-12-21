@@ -21,6 +21,11 @@ parameters:
 			path: src/Mailer/SymfonyMailer.php
 
 		-
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\NucleosAllInklBundle\\:\\:getContainerExtension\\(\\) should return Symfony\\\\Component\\\\DependencyInjection\\\\Extension\\\\ExtensionInterface\\|null but returns Symfony\\\\Component\\\\DependencyInjection\\\\Extension\\\\ExtensionInterface\\|false\\.$#"
+			count: 1
+			path: src/NucleosAllInklBundle.php
+
+		-
 			message: "#^Method Nucleos\\\\AllInklBundle\\\\Service\\\\AbstractService\\:\\:call\\(\\) has parameter \\$parameter with no value type specified in iterable type array\\.$#"
 			count: 1
 			path: src/Service/AbstractService.php
