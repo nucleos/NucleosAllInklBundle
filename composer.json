@@ -40,7 +40,7 @@
         "php": "^8.1",
         "ext-json": "*",
         "ext-soap": "*",
-        "nucleos/twig-extensions": "^2.0",
+        "nucleos/twig-extensions": "^2.0 || ^3.0",
         "psr/log": "^1.0 || ^2.0 || ^3.0",
         "sonata-project/block-bundle": "^4.21 || ^5.0",
         "sonata-project/doctrine-extensions": "^1.1 || ^2.0",
