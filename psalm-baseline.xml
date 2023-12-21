@@ -15,4 +15,9 @@
       <code>fixXmlConfig</code>
     </UndefinedMethod>
   </file>
+  <file src="src/NucleosAllInklBundle.php">
+    <FalsableReturnStatement>
+      <code><![CDATA[$this->extension]]></code>
+    </FalsableReturnStatement>
+  </file>
 </files>
