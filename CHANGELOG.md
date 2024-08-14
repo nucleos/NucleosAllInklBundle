@@ -2,27 +2,28 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.7.0 - TBD
+## 1.7.0 - 2024-08-14
 
-### Added
 
-- Nothing.
+-----
 
-### Changed
+### Release Notes for [1.7.0](https://github.com/nucleos/NucleosAllInklBundle/milestone/12)
 
-- Nothing.
+Feature release (minor)
 
-### Deprecated
+### 1.7.0
 
-- Nothing.
+- Total issues resolved: **0**
+- Total pull requests resolved: **2**
+- Total contributors: **2**
 
-### Removed
+#### Enhancement
 
-- Nothing.
+ - [466: Fix symfony deprecation](https://github.com/nucleos/NucleosAllInklBundle/pull/466) thanks to @core23
 
-### Fixed
+#### dependency
 
-- Nothing.
+ - [463: Update dependency psalm/plugin-phpunit to ^0.19](https://github.com/nucleos/NucleosAllInklBundle/pull/463) thanks to @renovate[bot]
 
 ## 1.6.0 - 2023-12-21
 
