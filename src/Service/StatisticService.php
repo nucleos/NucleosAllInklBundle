@@ -43,7 +43,7 @@ final class StatisticService extends AbstractService implements StatisticService
         ]);
     }
 
-    public function getTraffic(Session $session, int $year = null, $month = null): array
+    public function getTraffic(Session $session, ?int $year = null, $month = null): array
     {
         return $this->call($session, 'get_traffic', [
             'year'  => $year,

@@ -98,7 +98,7 @@ final class SpaceCheckCommand extends Command
                 continue;
             }
 
-            $output->warning(sprintf('Webspace limit reached for "%s"', $account->getAccount()));
+            $output->warning(\sprintf('Webspace limit reached for "%s"', $account->getAccount()));
 
             $this->mailer->sendSpaceWarning($account);
         }
