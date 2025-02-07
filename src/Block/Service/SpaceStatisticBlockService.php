@@ -57,7 +57,7 @@ final class SpaceStatisticBlockService extends AbstractBlockService implements E
         $this->logger           = new NullLogger();
     }
 
-    public function execute(BlockContextInterface $blockContext, Response $response = null): Response
+    public function execute(BlockContextInterface $blockContext, ?Response $response = null): Response
     {
         return $this->renderResponse($blockContext->getTemplate(), [
             'context'  => $blockContext,

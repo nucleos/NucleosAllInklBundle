@@ -15,7 +15,7 @@ use Nucleos\AllInklBundle\Model\Session;
 
 final class AccountService extends AbstractService implements AccountServiceInterface
 {
-    public function getAccounts(Session $session, string $account = null): array
+    public function getAccounts(Session $session, ?string $account = null): array
     {
         return $this->call($session, 'get_accounts', [
             'account_login' => $account,

@@ -32,7 +32,7 @@ final class AppKernel extends Kernel
 
     public function __construct()
     {
-        $this->baseDir = sprintf('%s/%s/app-bundle/var/', sys_get_temp_dir(), uniqid('', true));
+        $this->baseDir = \sprintf('%s/%s/app-bundle/var/', sys_get_temp_dir(), uniqid('', true));
 
         parent::__construct('test', false);
     }

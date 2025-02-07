@@ -41,5 +41,5 @@ interface StatisticServiceInterface
      *
      * @throws AllInklException
      */
-    public function getTraffic(Session $session, int $year = null, $month = null): array;
+    public function getTraffic(Session $session, ?int $year = null, $month = null): array;
 }

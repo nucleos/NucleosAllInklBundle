@@ -23,7 +23,7 @@ final class SpaceWarningMail extends TemplatedEmail
      */
     private $accountWarning;
 
-    public function __construct(Headers $headers = null, AbstractPart $body = null)
+    public function __construct(?Headers $headers = null, ?AbstractPart $body = null)
     {
         parent::__construct($headers, $body);
 

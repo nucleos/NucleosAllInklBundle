@@ -21,5 +21,5 @@ interface AccountServiceInterface
      * @param Session     $session session
      * @param string|null $account account name
      */
-    public function getAccounts(Session $session, string $account = null): array;
+    public function getAccounts(Session $session, ?string $account = null): array;
 }
