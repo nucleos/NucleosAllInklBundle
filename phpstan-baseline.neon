@@ -21,7 +21,7 @@ parameters:
 			path: src/Mailer/SymfonyMailer.php
 
 		-
-			message: "#^Method Nucleos\\\\AllInklBundle\\\\NucleosAllInklBundle\\:\\:getContainerExtension\\(\\) should return Symfony\\\\Component\\\\DependencyInjection\\\\Extension\\\\ExtensionInterface\\|null but returns Symfony\\\\Component\\\\DependencyInjection\\\\Extension\\\\ExtensionInterface\\|false\\.$#"
+			message: "#^Method Nucleos\\\\AllInklBundle\\\\NucleosAllInklBundle\\:\\:getContainerExtension\\(\\) should return Symfony\\\\Component\\\\DependencyInjection\\\\Extension\\\\ExtensionInterface but returns Symfony\\\\Component\\\\DependencyInjection\\\\Extension\\\\ExtensionInterface\\|false\\.$#"
 			count: 1
 			path: src/NucleosAllInklBundle.php
 
