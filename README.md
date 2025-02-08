@@ -10,7 +10,6 @@ NucleosAllInklBundle
 
 [![Continuous Integration](https://github.com/nucleos/NucleosAllInklBundle/actions/workflows/continuous-integration.yml/badge.svg?event=push)](https://github.com/nucleos/NucleosAllInklBundle/actions?query=workflow%3A"Continuous+Integration"+event%3Apush)
 [![Code Coverage](https://codecov.io/gh/nucleos/NucleosAllInklBundle/graph/badge.svg)](https://codecov.io/gh/nucleos/NucleosAllInklBundle)
-[![Type Coverage](https://shepherd.dev/github/nucleos/NucleosAllInklBundle/coverage.svg)](https://shepherd.dev/github/nucleos/NucleosAllInklBundle)
 
 This bundle provides a wrapper for using [all-inkl API] inside symfony applications.
 
