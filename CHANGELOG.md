@@ -2,27 +2,34 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.8.0 - TBD
+## 1.8.0 - 2025-10-12
 
-### Added
 
-- Nothing.
+-----
 
-### Changed
+### Release Notes for [1.8.0](https://github.com/nucleos/NucleosAllInklBundle/milestone/14)
 
-- Nothing.
+Feature release (minor)
 
-### Deprecated
+### 1.8.0
 
-- Nothing.
+- Total issues resolved: **0**
+- Total pull requests resolved: **8**
+- Total contributors: **2**
 
-### Removed
+#### dependency
 
-- Nothing.
+ - [475: Update to phpunit v12](https://github.com/nucleos/NucleosAllInklBundle/pull/475) thanks to @core23
+ - [474: Drop support for PHP 8.2](https://github.com/nucleos/NucleosAllInklBundle/pull/474) thanks to @core23
+ - [467: Update PHPStan packages to v2 (major)](https://github.com/nucleos/NucleosAllInklBundle/pull/467) thanks to @renovate[bot]
+ - [465: Update dependency matthiasnoback/symfony-dependency-injection-test to v6](https://github.com/nucleos/NucleosAllInklBundle/pull/465) thanks to @renovate[bot]
 
-### Fixed
+#### Enhancement
 
-- Nothing.
+ - [473: Remove ci pipeline overrides ](https://github.com/nucleos/NucleosAllInklBundle/pull/473) thanks to @core23
+ - [472: Sync tool config ](https://github.com/nucleos/NucleosAllInklBundle/pull/472) thanks to @core23
+ - [471: Remove infection testing ](https://github.com/nucleos/NucleosAllInklBundle/pull/471) thanks to @core23
+ - [469: Remove psalm in favor of phpstan ](https://github.com/nucleos/NucleosAllInklBundle/pull/469) thanks to @core23
 
 ## 1.7.0 - 2024-08-14
 
