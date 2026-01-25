@@ -56,7 +56,7 @@
         "symfony/mailer": "^6.4 || ^7.0",
         "symfony/mime": "^6.4 || ^7.0",
         "symfony/options-resolver": "^6.4 || ^7.0",
-        "symfony/translation-contracts": "^1.1 || ^2.0 || ^3.0",
+        "symfony/translation-contracts": "^7.0",
         "symfony/twig-bridge": "^6.4 || ^7.0",
         "twig/intl-extra": "^2.4 || ^3.0",
         "twig/twig": "^2.4 || ^3.0"
