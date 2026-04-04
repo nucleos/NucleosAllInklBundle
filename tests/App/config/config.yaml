@@ -11,7 +11,6 @@ framework:
         dsn: 'null://localhost'
 twig:
     strict_variables: true
-    exception_controller: null
 
 services:
     _defaults:
@@ -21,5 +20,3 @@ services:
     Nucleos\AllInklBundle\Tests\App\Controller\TestController:
         tags:
             - controller.service_arguments
-
-    Twig\Extensions\IntlExtension: ~
